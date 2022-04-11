@@ -5,11 +5,10 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 // import { config } from "./Constant/config";
 
 // window.base_url = config.base_url;
+import Components from "./Components";
 
-class App extends Component {
-	render() {
-		return <div>ok</div>;
-	}
-}
+const App = () => {
+	return <Components />;
+};
 
-render(<App />, document.getElementById("charts"));
+render(<App />, document.getElementById("components"));
